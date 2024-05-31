@@ -731,4 +731,7 @@ main {
     display: flex;
     justify-content: center;
   }
+  .timeline-external {
+    display: none;
+  }
 }
