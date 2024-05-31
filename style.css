@@ -16,7 +16,6 @@
 }
 body {
   display: flex;
-  gap: 32px;
 }
 .sidebar {
   width: 30%;
@@ -34,9 +33,8 @@ body {
 }
 .profile img {
   width: 100%;
-  /* height: 161.616px; */
+  /* height: 170px; */
   object-fit: cover;
-  /* object-position: cover; */
 }
 .profile-info .name {
   color: var(--Gray-Darker);
@@ -489,6 +487,16 @@ main {
   border-radius: 8.081px 0px 0px 8.081px;
   background: var(--Gray-Lightest-2);
 }
+.skill-card-joined2 {
+  background-color: var(--Gray-Lightest-2);
+  display: flex;
+  border-radius: 8.081px 0px 0px 8.081px;
+  padding: 16.162px;
+  gap: 2rem;
+  align-self: stretch;
+  justify-content: center;
+  align-items: center;
+}
 .skill-divider {
   width: 1.01px;
   align-self: stretch;
@@ -675,6 +683,9 @@ main {
   .tool-card {
     flex-grow: 1;
   }
+  /* #triple {
+    width: 195.45px;
+  } */
   .tool-row-2 {
     flex-wrap: wrap;
   }
@@ -695,5 +706,28 @@ main {
   .experience-desc {
     width: 100%;
     margin: auto;
+  }
+
+  .info {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .info-item {
+    width: 45%;
+    margin: auto;
+  }
+
+  .title {
+    display: none;
+  }
+  .info-logo {
+    height: 32px;
+    width: 32px;
+    padding: 6px;
+    background-color: var(--Gray-Lightest);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
   }
 }
