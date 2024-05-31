@@ -93,14 +93,15 @@ body {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-left: 13%;
-  margin-right: 13%;
+  margin-left: 48px;
+  margin-right: 48px;
   /* justify-content: flex-start; */
   align-items: flex-start;
 }
 .info .info-item {
   display: flex;
   gap: 16px;
+  width: 228px;
 }
 /* .info-item .info-details {
   display: flex;
