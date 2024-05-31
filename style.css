@@ -220,11 +220,12 @@ body {
 
 main {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   height: 1701.01px;
   padding: 64.646px 48.485px 64.646px 32.323px;
   align-items: flex-start;
   flex: 1 0 0;
+  gap: 1rem;
 }
 .project-card {
   display: flex;
@@ -714,8 +715,8 @@ main {
   }
 
   .info-item {
-    width: 45%;
-    margin: auto;
+    /* width: 45%;
+    margin: auto; */
   }
 
   .title {
