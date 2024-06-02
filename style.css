@@ -54,19 +54,19 @@ body {
   line-height: 32.323px; /* 133.333% */
   letter-spacing: 0.242px;
 }
-.quote-section {
+.sidebar__quote__section {
   display: flex;
   gap: 4px;
 }
-.quote .quote-pic img {
+.sidebar__quote__pic__image {
   width: 20.202px;
   height: 20.202px;
 }
-.quote .quote-pic-end img {
+.sidebar__quote__pic__end__image {
   width: 11.785px;
   height: 9.259px;
 }
-.quote .quote-name {
+.sidebar__quote__name {
   width: 202px;
   color: var(--Gray-Dark);
   font-family: Outfit;
@@ -74,10 +74,10 @@ body {
   font-weight: 500;
   margin-bottom: 4px;
 }
-.quote-end {
+.sidebar__quote__end {
   align-self: flex-end;
 }
-.quote .author {
+.sidebar__quote__author {
   color: var(--text-color);
   font-family: "DM Sans";
   font-size: 12px;
@@ -87,11 +87,11 @@ body {
   letter-spacing: 0.121px;
   margin-left: 24px;
 }
-.divider {
+.sidebar__section__divider {
   border: 1px solid var(--Gray-Lightest);
   margin: 13% 13%;
 }
-.info {
+.sidebar__info {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -100,16 +100,17 @@ body {
   /* justify-content: flex-start; */
   align-items: flex-start;
 }
-.info .info-item {
+.sidebar__item {
   display: flex;
   gap: 16px;
   width: 228px;
 }
-/* .info-item .info-details {
+/* .info-item .sidebar__item__details {
   display: flex;
   flex-direction: row;
 } */
-.info .info-details .name {
+
+.sidebar__item__details_name {
   color: var(--Gray-Default);
   font-family: "DM Sans";
   font-size: 12.121px;
@@ -117,14 +118,14 @@ body {
   line-height: 16.162px; /* 133.333% */
   letter-spacing: 0.121px;
 }
-.info .info-details .content {
+.sidebar__item__details_content {
   color: var(--Gray-Dark);
   font-family: "DM Sans";
   font-size: 14.141px;
   font-weight: 500;
   line-height: 18.182px; /* 128.571% */
 }
-.info-logo {
+.sidebar__item__logo {
   height: 32px;
   width: 32px;
   background-color: var(--Gray-Lightest);
@@ -134,7 +135,7 @@ body {
   align-items: center;
 }
 /* styling for socials */
-.title {
+.sidebar__title {
   color: var(--Gray-Default);
   font-family: "DM Sans";
   font-size: 12.121px;
@@ -158,12 +159,12 @@ body {
   flex-direction: column;
   gap: 48px;
 }
-.main-container {
+.main__container {
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
-.main-title {
+.main__title {
   color: var(--Gray-Darker);
   font-family: Outfit;
   font-size: 24px;
@@ -171,7 +172,7 @@ body {
   line-height: 32px; /* 133.333% */
   letter-spacing: 0.242px;
 }
-.project-image img {
+.project__card__image img {
   width: 48px;
   height: 48px;
   border-radius: 8.081px;
@@ -207,7 +208,7 @@ body {
   align-items: flex-start;
   gap: 32.323px;
 }
-.project-info {
+.project__card__info {
   display: flex;
   align-items: flex-start;
   gap: 16.162px;
@@ -230,7 +231,7 @@ main {
   flex: 1 0 0;
   gap: 1rem;
 }
-.project-card {
+.project__card {
   display: flex;
   padding: 24.242px;
   flex-direction: column;
@@ -240,7 +241,7 @@ main {
   border-radius: 8.081px 0px 0px 8.081px;
   background: var(--Gray-Lightest-2);
 }
-.project-content {
+.projects__container {
   display: flex;
   align-items: flex-start;
   gap: 8.081px;
@@ -256,7 +257,7 @@ main {
   align-items: flex-start;
   gap: 32.323px;
 }
-.experience-item {
+.experience__item {
   display: flex;
   padding: 6.061px 0px 16.162px 0px;
   justify-content: center;
@@ -271,7 +272,7 @@ main {
   gap: 16.162px;
   align-self: stretch;
 }
-.experience-info {
+.experience__item__info {
   display: flex;
   width: 30%;
   flex-direction: column;
@@ -279,19 +280,19 @@ main {
   gap: 8.081px;
   border-radius: 8.081px;
 }
-.experience .date-place {
+.experience__item__date_place {
   display: flex;
   align-items: center;
   gap: 4.04px;
   align-self: stretch;
 }
-.experience .place-container {
+.place-container {
   display: flex;
   align-items: center;
   gap: 4.04px;
   align-self: stretch;
 }
-.experience .date-place .date {
+.experience__item__date_place .date {
   color: var(--Gray-Dark);
   font-family: "DM Sans";
   font-size: 10.101px;
@@ -300,7 +301,7 @@ main {
   display: flex;
   gap: 4px;
 }
-.experience .date-place .place {
+.experience__item__date_place .place {
   color: var(--Gray-Default, #79819a);
   font-family: "DM Sans";
   font-size: 10.101px;
@@ -361,11 +362,11 @@ main {
   flex-direction: column;
   gap: 32.323px;
 }
-.education-content {
+.education__container {
   display: flex;
   gap: 8.081px;
 }
-.education-card {
+.education__container__card {
   display: flex;
   padding: 16.162px 24.242px;
   flex-direction: column;
@@ -431,15 +432,15 @@ main {
   align-items: flex-start;
   gap: 32.323px;
 }
-.skill-content {
+.skills__container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 16.162px;
   align-self: stretch;
 }
-.skill-row-1,
-.skill-row-2 {
+.skills__container__row__1,
+.skills__container__row__2 {
   display: flex;
   align-items: center;
   gap: 8.081px;
@@ -551,14 +552,14 @@ main {
   align-items: flex-start;
   gap: 32.323px;
 }
-.tool-content {
+.tools__container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 8.081px;
   align-self: stretch;
 }
-.tool-row-1 {
+.tools__container__row__1 {
   display: flex;
   align-items: flex-start;
   gap: 8.081px;
@@ -576,21 +577,21 @@ main {
   border-radius: 8.081px 0px 0px 0px;
   background: var(--Gray-Lightest-2);
 }
-.tool-content {
+.tools__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2.02px;
 }
-.tool-content .tool-title {
+.tools__container .tool-title {
   color: var(--Gray-Darker);
   font-family: "DM Sans";
   font-size: 14.141px;
   font-weight: 500;
   line-height: 18.182px; /* 128.571% */
 }
-.tool-content .tool-subtitle {
+.tools__container .tool-subtitle {
   color: var(--Gray-Default);
   text-align: center;
   font-family: "DM Sans";
@@ -605,14 +606,14 @@ main {
   height: 48.485px;
   border-radius: 8.081px;
 }
-.tool-row-2 {
+.tools__container__row__2 {
   display: flex;
   align-items: flex-start;
   gap: 8.081px;
   align-self: stretch;
   margin-top: 8px;
 }
-.tool-row-2 .tool-card {
+.tools__container__row__2 .tool-card {
   display: flex;
   height: 113.131px;
   padding: 16.162px;
@@ -648,17 +649,17 @@ main {
     width: 90%;
     margin: auto;
   }
-  .project-content,
+  .projects__container,
   .experience {
     width: 100%;
     flex-direction: column;
   }
-  .project-card {
+  .project__card {
     flex-direction: column;
     flex-wrap: wrap;
     width: 90%;
   }
-  .education-content {
+  .education__container {
     flex-direction: column;
     /* width: 90%; */
   }
@@ -667,7 +668,7 @@ main {
     margin: auto;
   }
 
-  .experience-item {
+  .experience__item {
     flex-direction: column;
   }
   /* skill */
@@ -681,7 +682,7 @@ main {
     width: 90%;
     margin: auto;
   }
-  .tool-row-1 {
+  .tools__container__row__1 {
     flex-wrap: wrap;
   }
   .tool-card {
@@ -690,7 +691,7 @@ main {
   /* #triple {
     width: 195.45px;
   } */
-  .tool-row-2 {
+  .tools__container__row__2 {
     flex-wrap: wrap;
   }
   /* experience */
@@ -701,8 +702,8 @@ main {
     flex-direction: column;
     flex-wrap: wrap;
   }
-  .experience-item,
-  .experience-info {
+  .experience__item,
+  .experience__item__info {
     flex-wrap: wrap;
     width: 90%;
     margin: auto;
@@ -725,7 +726,7 @@ main {
   .title {
     display: none;
   }
-  .info-logo {
+  .sidebar__item__logo {
     height: 32px;
     width: 32px;
     padding: 6px;
